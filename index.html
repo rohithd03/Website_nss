@@ -1,0 +1,99 @@
+---
+layout: default
+title: EBSB
+---
+
+     <!-- Courses -->
+     <section id="courses">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Updates<small>Few glimpes of the previous events</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-courses">
+							 
+					     <!-- post for loop starts -->
+                         {% assign sortedCourses = site.categories['popular'] | reverse %}
+                         {% for post in sortedCourses %}
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="courses-thumb">
+                                             <div class="courses-top">
+                                                  <div class="courses-image">
+                                                       <img src="{{post.img}}" class="img-responsive" alt="{{post.title}}">
+                                                  </div>
+                                                  <div class="courses-date">
+                                                       <span><i class="fa fa-calendar"></i> {{post.date | date: "%d %b %Y"}}</span>
+                                                  </div>
+                                             </div>
+
+                                             <div class="courses-detail">
+                                                  <h3><a href="{{ post.url | absolute_url }}">{{post.title}}</a></h3>
+                                                  <p>{{post.content | strip_html | truncate: 90}} {%- if post.content -%}<a href="{{ post.url | absolute_url }}"> more</a>{%- endif -%}</p>
+                                             </div>
+
+                                             <div class="courses-info">
+                                                  <div class="courses-author">
+                                                       <img src="{{post.author-img}}" class="img-responsive" alt="">
+                                                       <span>{{post.author}}</span>
+                                                  </div>
+                                                  <div class="courses-price">
+                                                       <a href="{{post.price}}"><span>Contact</span></a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+						 {% endfor %}
+                         <!-- post for loop ends -->
+
+
+
+                         </div>
+                         
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section id="testimonial">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Events<small>The events of upcoming time</small></h2>
+                         </div>
+
+                         <div class="owl-carousel owl-theme owl-client">
+							 
+							 
+					     <!-- post for loop starts -->
+                         {% assign sortedCourses = site.categories['upcoming_events'] | reverse %}
+                         {% for post in sortedCourses %}
+							 
+                              <div class="col-md-4 col-sm-4">
+                                   <div class="item">
+                                        <div class="tst-image">
+                                             <img src="{{post.img}}" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="tst-author">
+                                             <h4>{{post.title}}</h4>
+                                             <span>{{post.event_date}}</span>
+                                        </div>
+                                        <p>{{post.content}}</p>
+                                   </div>
+                              </div>
+                              
+                           {% endfor %}   
+                           
+                         </div>
+
+               </div>
+          </div>
+     </section> 
+

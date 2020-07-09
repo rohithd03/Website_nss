@@ -1,0 +1,9 @@
+---
+layout: post
+title: Poetry Competetition
+event_date: 25/05/2020
+categories: upcoming_events
+img: images/upcoming_event/poetry.jpeg
+---
+EBSB Club of IIITR along wid IITH brings to you a poetry competition, to celebrate the power of poetry during this pandemic.
+

@@ -1,0 +1,13 @@
+title: IIIT Raichur
+email: 
+description: IIITR
+baseurl: ""
+url: ""
+twitter_username: 
+github_username: 
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
