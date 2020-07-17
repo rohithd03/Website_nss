@@ -1,9 +1,0 @@
----
-layout: post
-title: Cooking Challenge
-event_date: 29/04/2020
-categories: upcoming_events
-img: images/upcoming_event/cooking.jpeg
----
-Here again the Ek Bharat Shreshtha Bharat club of IIIT Raichur is back to you with some super exciting quarantine challenge termed -
-"Quarantine cooking challenge"
